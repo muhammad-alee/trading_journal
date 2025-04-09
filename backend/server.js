@@ -6,12 +6,12 @@ const helmet = require('helmet');
 const config = require('./src/config/config');
 
 // Import routes
-const authRoutes = require('./src/routes/auth');
 const accountRoutes = require('./src/routes/accountsRouter');
-const tradeRoutes = require('./src/routes/trades');
-const journalRoutes = require('./src/routes/journal');
-const setupRoutes = require('./src/routes/setups');
-const analyticsRoutes = require('./src/routes/analytics');
+const authRoutes = require('./src/routes/authRouter');
+const tradeRoutes = require('./src/routes/tradesRouter');
+const journalRoutes = require('./src/routes/journalRouter');
+const setupRoutes = require('./src/routes/setupsRouter');
+const analyticsRoutes = require('./src/routes/analyticsRouter');
 
 // Initialize express app
 const app = express();
