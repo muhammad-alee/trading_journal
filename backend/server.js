@@ -7,7 +7,7 @@ const config = require('./src/config/config');
 
 // Import routes
 const authRoutes = require('./src/routes/auth');
-const accountRoutes = require('./src/routes/accounts');
+const accountRoutes = require('./src/routes/accountsRouter');
 const tradeRoutes = require('./src/routes/trades');
 const journalRoutes = require('./src/routes/journal');
 const setupRoutes = require('./src/routes/setups');
@@ -69,3 +69,4 @@ app.listen(PORT, () => {
 });
 
 module.exports = app;
+// Fix: Use accountsRouter for proper routing
